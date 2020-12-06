@@ -109,8 +109,8 @@ fimprocedimento
 Inicio
    y<-49     //numero de vezes que o contador "j" vai rodar.
    x<-50     //Número De Vezes Que o Contador "i" vai Rodar.
-   //para mudar quantidades de numeros altere 'x' e o 'y'
-   //com 1 a menos
+   //para mudar quantidades de numeros altere 'x' com numero igual ao de vetores e
+   // altere 'y' para numero de vetores menos -1.
 
    preenchimentoVetor()
    copiarVetor()
