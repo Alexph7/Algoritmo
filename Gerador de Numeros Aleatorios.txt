@@ -6,11 +6,11 @@ Algoritmo "Sorteio aleatorio"
 // Autor(a)    : Alex Rodrigues
 // Data atual  : 15/11/2020
 Var
-   ale:vetor[1..300] de inteiro
-   h:vetor [1..300] de inteiro
-   ax:vetor [1..300] de inteiro
-   au:vetor [1..300] de inteiro
-   zero:vetor[1..300]de inteiro
+   ale:vetor[1..50] de inteiro
+   h:vetor [1..50] de inteiro
+   ax:vetor [1..50] de inteiro
+   au:vetor [1..50] de inteiro
+   zero:vetor[1..50]de inteiro
    i,j,aux,auxd,x,y,auxf,cont:inteiro
 
    //-------------------------------------------------------------------
@@ -52,24 +52,6 @@ inicio
    fimpara
 fimprocedimento
 //----------------------------------------------------------------------
-procedimento ocorrenciaAleatoria()
-inicio
-   escreval()
-   escreval("--------------------------")
-   escreval("NUMEROS DE OCORRÊNCIAS (Aleatórias)")
-   escreval()
-   para i de 1 ate x faca  //repetição para mostrar o numero e a qtd de vezes que ele ocorreu sem ordem por enquanto.
-      se (au[i]<>0) entao
-         escreval("":1,ale[i]:2," {",au[i]+1," }")   // numero de casos repetidos + 1 que é a propria ocorrencia do numero em si.
-      senao
-         se(au[i]=0)e(ax[i]=0)entao   //se ele for igual a zero, Então Ele ocorreu no minímo uma vez mas não repetiu, e se for igual no vetor "ax" entao ele não é igual ao numero jaa repetido.
-            escreval("":1,ale[i]:2," {",au[i]+1," }")
-         fimse
-      fimse
-   fimpara
-fimprocedimento
-
-//--------------------------------------------------------------------
 procedimento ordenador()
 inicio
    para i de 1 ate y faca
@@ -125,8 +107,8 @@ inicio
 fimprocedimento
 //--------------------------------------------------------------------
 Inicio
-   y<-299   //numero de vezes que o contador "j" vai rodar.
-   x<-300  //Número De Vezes Que o Contador "i" vai Rodar.
+   y<-49     //numero de vezes que o contador "j" vai rodar.
+   x<-50     //Número De Vezes Que o Contador "i" vai Rodar.
    //para mudar quantidades de numeros altere 'x' e o 'y'
    //com 1 a menos
 
@@ -134,10 +116,9 @@ Inicio
    copiarVetor()
    numerosRepetidos()
    numerosOcorrencia()
-   //ocorrenciaAleatoria() // //apenas mostra numeros ocorridos sem ordem.
    ordenador()
    ordemDecrescente() //mostra numeros ocorridos ordenado em Decrescente.
-   verificarQuemNaoSaiu()
+   verificarQuemNaoSaiu()  //números que não ocorreu nenhuma vez.
 
 
 Fimalgoritmo
