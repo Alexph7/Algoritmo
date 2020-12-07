@@ -1,7 +1,7 @@
 Algoritmo "Sorteio aleatorio"
 //
 //
-//Descrição   : Código Gera Quantidades De Numeros Aleatórios e Além Disso
+//Descrição   : Gerador De Numeros Aleatórios e Além Disso
 //              Conta Quais Numeros Foram Repetidos e Quantas Vezes Ocorreu a repetição de mesmos números.
 // Autor(a)    : Alex Rodrigues
 // Data atual  : 15/11/2020
