@@ -1,6 +1,4 @@
 # Algoritmo
-Feito Em Portugol no VIsualg
-# Algoritmo
 Feito Em Portugol no Visualg, Numeros que estão 
 Nos vetores, e as variáveis X, e Y, decidirão
 Quantas vezes os numeros serão gerados, depois 
