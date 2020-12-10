@@ -31,6 +31,7 @@ inicio
       escreval
    fimpara
 fimprocedimento
+//==================================================================
 
 Inicio
    escreval("Oque Deseja Fazer? ")
@@ -50,6 +51,10 @@ Inicio
    escreval("[14] Mostrar a Soma dos Triangulos")
    escreval("[15] Sair")
    leia(res)
-
+   escolha res
+   caso 1
+      mostrarMatriz()
+   outrocaso
+   fimescolha
 
 Fimalgoritmo
