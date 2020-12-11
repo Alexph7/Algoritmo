@@ -9,7 +9,7 @@ Var
    matriz:vetor[1..4,1..4]de inteiro
    i,j,res:inteiro
 
-procedimento mostraMatriz()
+procedimento preenchMatriz()
 inicio
    aleatorio 1,9
    para i de 1 ate 4 faca
@@ -18,23 +18,46 @@ inicio
       fimpara
       escreval
    fimpara
-   limpatela
+   aleatorio off
+fimprocedimento
+//===================================================================
+
+procedimento mostraMatriz()
+inicio
    para i de 1 ate 4 faca
       para j de 1 ate 4 faca
          se(j=1)entao
-            escreval
-            escreva(" ":13,matriz[i,j])
+            escreval()
+            escreva(" ":10,matriz[i,j])
          senao
             escreva(matriz[i,j]:6)
          fimse
       fimpara
-      escreval
+      escreval()
    fimpara
 fimprocedimento
-//==================================================================
 
+//===================================================================
+
+procedimento mostraDiagPrinc()
+inicio
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         se(i=j)entao
+            escreva(" ":10,Matriz[i,j])
+            escreval()
+         senao
+            escreva("":5)
+         fimse
+      fimpara
+      escreval()
+   fimpara
+fimprocedimento
+
+//====================================================================
 Inicio
-   escreval(" Oque Deseja Fazer? ")
+   escreval("               Oque Deseja Fazer ? ")
+   escreval()
    escreval(" [1] Mostrar a Matriz")
    escreval(" [2] Mostrar a Diagonal Principal")
    escreval(" [3] Mostrar o Triângulo Superior")
@@ -51,6 +74,8 @@ Inicio
    escreval("[14] Mostrar a Soma dos Triângulos")
    escreval("[15] Sair")
    leia(res)
+   preenchMatriz()
+   limpatela
    escolha res
    caso 1
       mostraMatriz()
