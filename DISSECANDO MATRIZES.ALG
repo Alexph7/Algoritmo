@@ -55,6 +55,25 @@ inicio
 fimprocedimento
 
 //====================================================================
+procedimento mostraTriSup()
+inicio
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         se((i>j)ou(i=j))entao
+            escreva(" ":7)
+         senao
+            escreva(Matriz[i,j]:7)
+         fimse
+      fimpara
+      escreval
+      escreval()
+   fimpara
+
+fimprocedimento
+
+
+//====================================================================
+
 Inicio
    escreval("               Oque Deseja Fazer ? ")
    escreval()
@@ -82,7 +101,7 @@ Inicio
    caso 2
       mostraDiagPrinc()
    caso 3
-      mostratriSup()
+      mostraTriSup()
    caso 4
       mostraTriInf()
    caso 5
