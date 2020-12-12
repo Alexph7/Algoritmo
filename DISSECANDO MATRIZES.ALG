@@ -102,6 +102,31 @@ inicio
    escreval("         A Soma Da Matriz é =",soma)
 fimprocedimento
 
+//====================================================================
+procedimento mostParMat()
+var
+   par,cc,cd:inteiro
+   vetpar:vetor[1..16]de inteiro
+inicio
+   mostraMatriz()
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         se(matriz[i,j]%2=0)entao
+            par<-par+1
+             cc<-cc+1
+             vetpar[cc]<-matriz[i,j]
+         fimse
+      fimpara
+   fimpara
+   escreval()
+   escreva(" A Matriz Contém",par," Números Pares São Estes:")
+   para i de 1 ate 16 faca
+      se(vetpar[i]<>0)entao
+         escreva(vetpar[i])
+      fimse
+   fimpara
+   escreval()
+fimprocedimento
 
 //====================================================================
 
