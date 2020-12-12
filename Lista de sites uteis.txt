@@ -140,7 +140,7 @@ https://www.nothingprivate.ml/ //Site mostra que vc nao e anonimo em modo anonim
 
 https://rapidtables.com/ //referência online e ferramentas - calculadoras, conversores, matemática, eletricidade, web design
 
-
+http://www.screenmirrorapp.com //Espelhar aparelhos
 
 ==========================================   PORTUGUES   ====================================================
 
@@ -155,6 +155,10 @@ https://www.normaculta.com.br/ //Um dos sssites mais completos para aprender por
 https://palavras-que-rimam.net/
 
 https://www.sinonimos.com.br/ //Dicionario de sinonimos e importante
+
+http://www.etymonline.com //Dicionário Etimologico
+
+http://yourdictionary.com //Dicionario Geral
 
 
 
