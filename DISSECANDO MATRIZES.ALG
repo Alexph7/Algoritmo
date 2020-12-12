@@ -65,12 +65,29 @@ inicio
             escreva(Matriz[i,j]:7)
          fimse
       fimpara
-      escreval
+      escreval()
       escreval()
    fimpara
 
 fimprocedimento
 
+//====================================================================
+procedimento mostraTriInf()
+inicio
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         se((i<j)ou(i=j))entao
+            escreva(" ":7)
+         senao
+            escreva(matriz[i,j]:7)
+         fimse
+      fimpara
+      escreval()
+      escreval()
+   fimpara
+
+
+fimprocedimento
 
 //====================================================================
 
