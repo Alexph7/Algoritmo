@@ -7,7 +7,7 @@ Algoritmo "Dissecando Matrizes"
 
 Var
    matriz:vetor[1..4,1..4]de inteiro
-   i,j,res:inteiro
+   i,j,res,soma:inteiro
 
 procedimento preenchMatriz()
 inicio
@@ -88,6 +88,20 @@ inicio
 
 
 fimprocedimento
+
+//====================================================================
+procedimento mostraSomaMat()
+inicio
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         soma<-soma+matriz[i,j]
+      fimpara
+   fimpara
+   mostraMatriz
+   escreval()
+   escreval("         A Soma Da Matriz é =",soma)
+fimprocedimento
+
 
 //====================================================================
 
