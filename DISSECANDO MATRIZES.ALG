@@ -129,7 +129,22 @@ inicio
 fimprocedimento
 
 //====================================================================
+procedimento mostMultMat()
+var
+   mult:inteiro
+inicio
+   mostraMatriz()
+   mult<-1
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         mult<-mult*matriz[i,j]
+      fimpara
+   fimpara
+   escreval()
+   escreval("A Multiplicação Da Matriz é =",mult)
+fimprocedimento
 
+//====================================================================
 Inicio
    escreval("               Oque Deseja Fazer ? ")
    escreval()
