@@ -72,7 +72,7 @@ inicio
 fimprocedimento
 
 //====================================================================
-procedimento mostraTriInf()
+procedimento TrianInf()
 inicio
    para i de 1 ate 4 faca
       para j de 1 ate 4 faca
@@ -90,7 +90,7 @@ inicio
 fimprocedimento
 
 //====================================================================
-procedimento mostraSomaMat()
+procedimento SomaMat()
 inicio
    para i de 1 ate 4 faca
       para j de 1 ate 4 faca
@@ -103,7 +103,7 @@ inicio
 fimprocedimento
 
 //====================================================================
-procedimento mostParMat()
+procedimento ParMat()
 var
    par,cc,cd:inteiro
    vetpar:vetor[1..16]de inteiro
@@ -129,7 +129,7 @@ inicio
 fimprocedimento
 
 //====================================================================
-procedimento mostMultMat()
+procedimento MultMat()
 var
    mult:inteiro
 inicio
@@ -145,7 +145,7 @@ inicio
 fimprocedimento
 
 //====================================================================
-procedimento mostSomDiaPrin()
+procedimento SomDiaPrin()
 var
    diag:inteiro
 inicio
@@ -160,6 +160,23 @@ inicio
    escreval
    escreval("         A Soma da Diagonal Principal é =",diag)
 
+fimprocedimento
+
+//====================================================================
+procedimento MultDiaPrin()
+var
+   mult:inteiro
+inicio
+   mult<-1
+   mostraDiagPrinc()
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         se(i=j)entao
+            mult<-mult*matriz[i,j]
+         fimse
+      fimpara
+   fimpara
+   escreval("      A Multiplicação da Diagonal Principal é =",mult)
 fimprocedimento
 
 //====================================================================
@@ -192,27 +209,27 @@ Inicio
    caso 3
       mostraTriSup()
    caso 4
-      mostraTriInf()
+      TrianInf()
    caso 5
-      mostraSomaMat()
+      SomaMat()
    caso 6
-      mostParMat()
+      ParMat()
    caso 7
-      mostMultMat()
+      MultMat()
    caso 8
-      mostSomDiaPrin()
+      SomDiaPrin()
    caso 9
-      mostMultDiaPrin()
+      MultDiaPrin()
    caso 10
-      mostSomTriSup()
+      SomTriSup()
    caso 11
-      mostMultTriSup()
+      MultTriSup()
    caso 12
-      mostSomTriangInf()
+      SomTriangInf()
    caso 13
-      mostMultTrianInf()
+      MultTrianInf()
    caso 14
-      mostSomTrians()
+      SomTrians()
    caso 15
       escreval("Até Mais...")
    outrocaso
