@@ -145,6 +145,24 @@ inicio
 fimprocedimento
 
 //====================================================================
+procedimento mostSomDiaPrin()
+var
+   diag:inteiro
+inicio
+   mostraDiagPrinc()
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         se(i=j)entao
+            diag<-diag+matriz[i,j]
+         fimse
+      fimpara
+   fimpara
+   escreval
+   escreval("         A Soma da Diagonal Principal é =",diag)
+
+fimprocedimento
+
+//====================================================================
 Inicio
    escreval("               Oque Deseja Fazer ? ")
    escreval()
