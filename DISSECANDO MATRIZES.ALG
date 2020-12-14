@@ -213,6 +213,41 @@ inicio
 fimprocedimento
 
 //====================================================================
+procedimento somTriInf()
+var
+soma:inteiro
+inicio
+   trianInf()
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         se(i>j)entao
+            soma<-soma+Matriz[i,j]
+         fimse
+      fimpara
+   fimpara
+   escreval("      A Soma Do Triângulo Inferior é =",soma)
+fimprocedimento
+
+//====================================================================
+procedimento multTriInf()
+var
+   mult:inteiro
+inicio
+   mult<-1
+   TrianInf()
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         se(i<j)entao
+            mult<-mult*Matriz[i,j]
+         fimse
+      fimpara
+   fimpara
+   escreval("    A Multiplicação Do Triângulo Inferior é =",mult)
+fimprocedimento
+
+//====================================================================
+
+
 Inicio
    escreval("               Oque Deseja Fazer ? ")
    escreval()
@@ -258,9 +293,9 @@ Inicio
    caso 11
       multTriSup()
    caso 12
-      somTriangInf()
+      somTriInf()
    caso 13
-      multTrianInf()
+      multTriInf()
    caso 14
       somTrians()
    caso 15
