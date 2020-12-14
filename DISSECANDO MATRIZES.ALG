@@ -1,6 +1,5 @@
 Algoritmo "Dissecando Matrizes"
-//
-//
+//  
 // Descrição   : Exercício proposto
 // Autor(a)    : Alex Rodrigues
 // Data atual  : 09/12/2020
@@ -246,7 +245,24 @@ inicio
 fimprocedimento
 
 //====================================================================
+procedimento somTrians()
+inicio
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         se(i<>j)entao
+            escreva(Matriz[i,j]:7)
+            soma<-soma+Matriz[i,j]
+         senao
+            escreva(" ":7)
+         fimse
+      fimpara
+      escreval()
+   fimpara
+   escreval()
+   escreval("    A Soma Dos Triângulos é =",soma)
+fimprocedimento
 
+//====================================================================
 
 Inicio
    escreval("               Oque Deseja Fazer ? ")
