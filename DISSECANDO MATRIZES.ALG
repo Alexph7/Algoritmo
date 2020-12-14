@@ -196,6 +196,23 @@ inicio
 fimprocedimento
 
 //====================================================================
+procedimento multTriSup()
+var
+   mult:inteiro
+inicio
+   mult<-1
+   mostraTriSup()
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         se(i<j)entao
+            mult<-mult*Matriz[i,j]
+         fimse
+      fimpara
+   fimpara
+   escreval("    A Multiplicação Do Triângulo Superior é =",mult)
+fimprocedimento
+
+//====================================================================
 Inicio
    escreval("               Oque Deseja Fazer ? ")
    escreval()
