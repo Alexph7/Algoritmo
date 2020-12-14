@@ -72,7 +72,7 @@ inicio
 fimprocedimento
 
 //====================================================================
-procedimento TrianInf()
+procedimento trianInf()
 inicio
    para i de 1 ate 4 faca
       para j de 1 ate 4 faca
@@ -90,7 +90,7 @@ inicio
 fimprocedimento
 
 //====================================================================
-procedimento SomaMat()
+procedimento somaMat()
 inicio
    para i de 1 ate 4 faca
       para j de 1 ate 4 faca
@@ -103,7 +103,7 @@ inicio
 fimprocedimento
 
 //====================================================================
-procedimento ParMat()
+procedimento paresMat()
 var
    par,cc,cd:inteiro
    vetpar:vetor[1..16]de inteiro
@@ -113,8 +113,8 @@ inicio
       para j de 1 ate 4 faca
          se(matriz[i,j]%2=0)entao
             par<-par+1
-             cc<-cc+1
-             vetpar[cc]<-matriz[i,j]
+            cc<-cc+1
+            vetpar[cc]<-matriz[i,j]
          fimse
       fimpara
    fimpara
@@ -129,7 +129,7 @@ inicio
 fimprocedimento
 
 //====================================================================
-procedimento MultMat()
+procedimento multMat()
 var
    mult:inteiro
 inicio
@@ -145,7 +145,7 @@ inicio
 fimprocedimento
 
 //====================================================================
-procedimento SomDiaPrin()
+procedimento somDiaPrin()
 var
    diag:inteiro
 inicio
@@ -163,7 +163,7 @@ inicio
 fimprocedimento
 
 //====================================================================
-procedimento MultDiaPrin()
+procedimento multDiaPrin()
 var
    mult:inteiro
 inicio
@@ -177,6 +177,22 @@ inicio
       fimpara
    fimpara
    escreval("      A Multiplicação da Diagonal Principal é =",mult)
+fimprocedimento
+
+//====================================================================
+procedimento somTriSup()
+var
+soma:inteiro
+inicio
+   mostraTriSup()
+   para i de 1 ate 4 faca
+      para j de 1 ate 4 faca
+         se(i<j)entao
+            soma<-soma+Matriz[i,j]
+         fimse
+      fimpara
+   fimpara
+   escreval("      A Soma Do Triângulo Superior é =",soma)
 fimprocedimento
 
 //====================================================================
@@ -209,27 +225,27 @@ Inicio
    caso 3
       mostraTriSup()
    caso 4
-      TrianInf()
+      trianInf()
    caso 5
-      SomaMat()
+      somaMat()
    caso 6
-      ParMat()
+      paresMat()
    caso 7
-      MultMat()
+      multMat()
    caso 8
-      SomDiaPrin()
+      somDiaPrin()
    caso 9
-      MultDiaPrin()
+      multDiaPrin()
    caso 10
-      SomTriSup()
+      somTriSup()
    caso 11
-      MultTriSup()
+      multTriSup()
    caso 12
-      SomTriangInf()
+      somTriangInf()
    caso 13
-      MultTrianInf()
+      multTrianInf()
    caso 14
-      SomTrians()
+      somTrians()
    caso 15
       escreval("Até Mais...")
    outrocaso
